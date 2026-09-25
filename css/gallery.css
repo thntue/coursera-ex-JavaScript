@@ -1,0 +1,61 @@
+/*
+   Interactive Photo Gallery Stylesheet
+   Course: Interactivity with JavaScript (University of Michigan / Coursera)
+   Author: thntue
+   Repository: https://github.com/thntue/coursera-ex-JavaScript
+*/
+
+body {
+    margin: 0%;
+    border: 0px none;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image {
+    line-height: 650px;
+    width: 575px;
+    height: 650px;
+    border: 5px solid black;
+    margin: 25px auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 150%;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.preview {
+    width: 10%;
+    margin-left: 17%;
+    border: 10px solid black;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.preview:hover {
+    border-color: #8e68ff;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for smaller viewports */
+@media (max-width: 768px) {
+    #image {
+        width: 90%;
+        height: 380px;
+        line-height: 380px;
+        font-size: 110%;
+    }
+
+    .preview {
+        width: 25%;
+        margin-left: 6%;
+        border-width: 5px;
+    }
+}
